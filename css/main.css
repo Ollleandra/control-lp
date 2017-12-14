@@ -1,0 +1,139 @@
+:root{
+    --primary-color: #ffa209;
+    --broun: #26221a;
+    --gray: #e7e7e6;
+    --blue: #4d59a1;
+    --deep-gray: #dededd;
+    --white: #ffffff;
+}
+
+html {
+    color: var(--broun);
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.4;
+}
+
+.header, .main, .slider, .footer{
+    width: 100%;
+}
+input, button{
+    outline: none;
+    display: inline-block;
+}
+figure{
+    margin: 0px;
+}
+[class^="col-"]{
+    box-sizing: border-box;
+}
+.header>div, .slider>div, .main>section, .footer>div{
+    max-width: 1170px;
+    padding: 0px;
+    margin: 0 auto;
+}
+h3, .desc-section{
+    text-align: center;
+}
+.header{
+    height: 90px;
+    background-color: var(--broun);
+}
+.slider{
+    height:670px;
+    background: url("../images/section1-bg.jpg") no-repeat -10% center;
+    background-size: 100% auto;
+}
+.form-tmp{
+
+}
+.btn-wr, input{
+    height: 50px;
+    max-width: 260px;
+    text-align: center;
+    box-sizing: border-box;
+}
+input{
+    display: inline-block;
+}
+.btn-tmp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--broun);
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-out;
+}
+.btn-tmp:hover{
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+
